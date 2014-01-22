@@ -26,7 +26,6 @@
 		 */
 
 		public function gmap3($options){
-			//$template = '%s.gmap3({%s});';
 			$template = '%s.gmap3({%s})';
 			// The internal base engine helper does not work with recursive callbacks
 			$options['marker']['events'] = $this->_prepareCallbacks('gmap3', $options['marker']['events']);
