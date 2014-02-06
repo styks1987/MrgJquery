@@ -13,7 +13,8 @@
 		protected function _init_callbacks(){
 			$callbacks = [
 				'gmap3'=>['mouseover'=>'marker, event, context', 'mouseout'=>''],
-				'selectBoxIt'=>[]
+				'selectBoxIt'=>[],
+				'nestedSortable'=>[]
 			];
 			$this->_callbackArguments = array_merge($this->_callbackArguments, $callbacks);
 		}
@@ -46,6 +47,18 @@
 			$template = '%s.selectBoxIt({%s});';
 	        return $this->_methodTemplate('selectBoxIt', $template, $options);
 		}
+
+		/**
+		 * When paired with the MrgTreeSorter
+		 * This gives you the ability to sort a list
+		 *
+		 * Date Added: Tue, Feb 04, 2014
+		 */
+		public function nestedSortable($options = []){
+			$template = '%s.nestedSortable({%s});';
+			return $this->_methodTemplate('nestedSortable', $template, $options);
+		}
+
 	}
 
 ?>
