@@ -66,8 +66,9 @@
 		 * Date Added: Mon, Apr 14, 2014
 		 */
 		public function placeholder($options = []){
+			$options = $this->_parseOptions($options);
 			$template = '%s.placeholder({%s});';
-			return $this->_methodTemplate('placeholder', $template, $options);
+			return sprintf($template, $this->selection, $options);
 		}
 
 
