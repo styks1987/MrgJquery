@@ -59,6 +59,18 @@
 			return $this->_methodTemplate('nestedSortable', $template, $options);
 		}
 
+		/**
+		 * When paired with the custom select plugin
+		 * This will allow fixing the IE 9 placeholder bug
+		 *
+		 * Date Added: Mon, Apr 14, 2014
+		 */
+		public function placeholder($options = []){
+			$template = '%s.placeholder({%s});';
+			return $this->_methodTemplate('placeholder', $template, $options);
+		}
+
+
 	}
 
 ?>
