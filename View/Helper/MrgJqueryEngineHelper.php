@@ -72,6 +72,20 @@
 		}
 
 
+		/**
+		 * When paired with the custom select plugin
+		 * This will allow for adding date pickers
+		 *
+		 * Date Added: Thu, Jun 05, 2014
+		 */
+		public function datepicker($options=[]){
+			$options = $this->_parseOptions($options);
+			$template = '%s.datepicker({%s});';
+			return sprintf($template, $this->selection, $options);
+		}
+
+
+
 	}
 
 ?>
