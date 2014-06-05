@@ -14,7 +14,8 @@
 			$callbacks = [
 				'gmap3'=>['mouseover'=>'marker, event, context', 'mouseout'=>''],
 				'selectBoxIt'=>[],
-				'nestedSortable'=>['update'=>'']
+				'nestedSortable'=>['update'=>''],
+				'datepicker'=>[]
 			];
 			$this->_callbackArguments = array_merge($this->_callbackArguments, $callbacks);
 		}
